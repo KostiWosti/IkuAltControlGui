@@ -3,6 +3,26 @@
 
 -- Instances:
 
+		pcall(function()
+			game.StarterGui:SetCore("SendNotification", {
+				Title = 'Loaded!:';
+				Text = 'The script is now loaded!!';
+				Duration = 10;
+			})
+		end)
+		
+		script.Parent.MouseButton1Click:Connect(function()
+		pcall(function()
+			game.StarterGui:SetCore("SendNotification", {
+				Title = 'Welcome!!:';
+				Text = 'Thanks for buying!!';
+				Duration = 10;
+			})
+		end)
+	
+
+
+
 local ScreenGui = Instance.new("ScreenGui")
 local IkuAltControl = Instance.new("Frame")
 local TopBar = Instance.new("Frame")
