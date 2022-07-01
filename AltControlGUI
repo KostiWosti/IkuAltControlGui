@@ -192,7 +192,7 @@ local UICorner_68 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("CoreGui)
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 IkuAltControl.Name = "IkuAltControl"
