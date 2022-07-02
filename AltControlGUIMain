@@ -1,0 +1,1673 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+pcall(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Loaded!:';
+		Text = 'The script is now loaded! Toogle Key = V ';
+		Duration = 10;
+	})
+end)
+
+	pcall(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = 'Welcome!!:';
+			Text = 'Thanks for buying!!';
+			Duration = 10;
+		})
+	end)
+	
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local IkuAltControl = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local IkuLabel = Instance.new("TextLabel")
+local CloseBut = Instance.new("TextButton")
+local Clear = Instance.new("ImageLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local HomeBut = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local HomeFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Welcomelabel = Instance.new("TextLabel")
+local Welcomelabel2 = Instance.new("TextLabel")
+local MainBut = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local MainFrame = Instance.new("ScrollingFrame")
+local PrefixFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Prefixlabel = Instance.new("TextLabel")
+local _0Prefix = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local DropFrame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local drop = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local stop = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local AirlockFrame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local airlock = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local unlock = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local LoadFrame = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local swagmode = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local encrypt = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local MaskFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local maskon = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local maskoff = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local MaskLabel = Instance.new("TextLabel")
+local GroundFrame = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local ground = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local SetpuLabel = Instance.new("TextLabel")
+local lineslabel = Instance.new("TextLabel")
+local BankFrame = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local bank = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local TrainFrame = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local train = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Admin = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local admin = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local club = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local club_2 = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local HostSetupLabel = Instance.new("TextLabel")
+local RandomFrame = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local random = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Lineframe = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local line = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local CircleFrame = Instance.new("Frame")
+local UICorner_34 = Instance.new("UICorner")
+local around = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local SpotFrame = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local spot = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local lineslabel_2 = Instance.new("TextLabel")
+local CdropFrame = Instance.new("Frame")
+local UICorner_38 = Instance.new("UICorner")
+local cdroplabel = Instance.new("TextLabel")
+local cdropbox = Instance.new("TextBox")
+local UICorner_39 = Instance.new("UICorner")
+local MoneyShowLabel = Instance.new("TextLabel")
+local MoneyFrame = Instance.new("Frame")
+local UICorner_40 = Instance.new("UICorner")
+local moneyshow = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local moneyhide = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local DelCashLabel = Instance.new("TextLabel")
+local MoneyDelFrame = Instance.new("Frame")
+local UICorner_43 = Instance.new("UICorner")
+local moneydelete = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local moneynodelete = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local FpsFrame = Instance.new("Frame")
+local UICorner_46 = Instance.new("UICorner")
+local fpslabel = Instance.new("TextLabel")
+local fpsbox = Instance.new("TextBox")
+local UICorner_47 = Instance.new("UICorner")
+local StompFrame = Instance.new("Frame")
+local UICorner_48 = Instance.new("UICorner")
+local stomplabel = Instance.new("TextLabel")
+local stompbox = Instance.new("TextBox")
+local UICorner_49 = Instance.new("UICorner")
+local DroppedFrame = Instance.new("Frame")
+local UICorner_50 = Instance.new("UICorner")
+local dropped = Instance.new("TextButton")
+local UICorner_51 = Instance.new("UICorner")
+local advertnewframe = Instance.new("Frame")
+local UICorner_52 = Instance.new("UICorner")
+local advertlabel = Instance.new("TextLabel")
+local advertbox = Instance.new("TextBox")
+local UICorner_53 = Instance.new("UICorner")
+local AdvertLabel = Instance.new("TextLabel")
+local Advertframe = Instance.new("Frame")
+local UICorner_54 = Instance.new("UICorner")
+local adverton = Instance.new("TextButton")
+local UICorner_55 = Instance.new("UICorner")
+local advertoff = Instance.new("TextButton")
+local UICorner_56 = Instance.new("UICorner")
+local bringframe = Instance.new("Frame")
+local UICorner_57 = Instance.new("UICorner")
+local bringlabel = Instance.new("TextLabel")
+local targetbox = Instance.new("TextBox")
+local UICorner_58 = Instance.new("UICorner")
+local ThemesBut = Instance.new("TextButton")
+local UICorner_59 = Instance.new("UICorner")
+local ThemesFrame = Instance.new("Frame")
+local UICorner_60 = Instance.new("UICorner")
+local Blackwhitebut = Instance.new("TextButton")
+local UICorner_61 = Instance.new("UICorner")
+local NormalBut = Instance.new("TextButton")
+local UICorner_62 = Instance.new("UICorner")
+local midbluebut = Instance.new("TextButton")
+local UICorner_63 = Instance.new("UICorner")
+local Nightbut = Instance.new("TextButton")
+local UICorner_64 = Instance.new("UICorner")
+local UICorner_65 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+IkuAltControl.Name = "IkuAltControl"
+IkuAltControl.Parent = ScreenGui
+IkuAltControl.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+IkuAltControl.Position = UDim2.new(0.316424012, 0, 0.204783127, 0)
+IkuAltControl.Size = UDim2.new(0, 433, 0, 253)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = IkuAltControl
+TopBar.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TopBar.Position = UDim2.new(0.0149999997, 0, 0.0219999999, 0)
+TopBar.Size = UDim2.new(0, 420, 0, 19)
+
+UICorner.Parent = TopBar
+
+IkuLabel.Name = "IkuLabel"
+IkuLabel.Parent = TopBar
+IkuLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IkuLabel.BackgroundTransparency = 1.000
+IkuLabel.Position = UDim2.new(0.275353104, 0, 0, 0)
+IkuLabel.Size = UDim2.new(0, 200, 0, 19)
+IkuLabel.Font = Enum.Font.Gotham
+IkuLabel.Text = "Iku Alt Control GUI"
+IkuLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+IkuLabel.TextSize = 16.000
+
+CloseBut.Name = "CloseBut"
+CloseBut.Parent = TopBar
+CloseBut.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseBut.BackgroundTransparency = 1.000
+CloseBut.Position = UDim2.new(0.932114899, 0, 0, 0)
+CloseBut.Size = UDim2.new(0, 26, 0, 19)
+CloseBut.Font = Enum.Font.GothamBold
+CloseBut.Text = ""
+CloseBut.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseBut.TextSize = 20.000
+
+Clear.Name = "Clear"
+Clear.Parent = CloseBut
+Clear.BackgroundTransparency = 1.000
+Clear.Position = UDim2.new(0.0384615324, 0, -0.263157845, 0)
+Clear.Size = UDim2.new(0, 24, 0, 28)
+Clear.Image = "rbxassetid://3944676352"
+Clear.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Clear.ScaleType = Enum.ScaleType.Fit
+
+ImageLabel.Parent = TopBar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0166666657, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 22, 0, 19)
+ImageLabel.Image = "rbxassetid://10080566116"
+
+HomeBut.Name = "HomeBut"
+HomeBut.Parent = IkuAltControl
+HomeBut.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+HomeBut.Position = UDim2.new(0.0128810611, 0, 0.143884942, 0)
+HomeBut.Size = UDim2.new(0, 94, 0, 22)
+HomeBut.Text = "Home"
+HomeBut.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeBut.TextSize = 10.000
+HomeBut.TextWrapped = true
+
+UICorner_2.Parent = HomeBut
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = IkuAltControl
+HomeFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+HomeFrame.Position = UDim2.new(0.245501161, 0, 0.116124086, 0)
+HomeFrame.Size = UDim2.new(0, 318, 0, 213)
+
+UICorner_3.Parent = HomeFrame
+
+ImageLabel_2.Parent = HomeFrame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+ImageLabel_2.Position = UDim2.new(0.344557226, 0, 0.0366472378, 0)
+ImageLabel_2.Size = UDim2.new(0, 85, 0, 81)
+ImageLabel_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_4.Parent = ImageLabel_2
+
+Welcomelabel.Name = "Welcomelabel"
+Welcomelabel.Parent = HomeFrame
+Welcomelabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcomelabel.BackgroundTransparency = 1.000
+Welcomelabel.Position = UDim2.new(0.140135005, 0, 0.420066893, 0)
+Welcomelabel.Size = UDim2.new(0, 196, 0, 50)
+Welcomelabel.Text = ""
+Welcomelabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcomelabel.TextSize = 15.000
+
+Welcomelabel2.Name = "Welcomelabel2"
+Welcomelabel2.Parent = HomeFrame
+Welcomelabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcomelabel2.BackgroundTransparency = 1.000
+Welcomelabel2.Position = UDim2.new(0.136812747, 0, 0.51396358, 0)
+Welcomelabel2.Size = UDim2.new(0, 196, 0, 50)
+Welcomelabel2.Text = ""
+Welcomelabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcomelabel2.TextSize = 10.000
+
+MainBut.Name = "MainBut"
+MainBut.Parent = IkuAltControl
+MainBut.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainBut.Position = UDim2.new(0.0128810611, 0, 0.26246202, 0)
+MainBut.Size = UDim2.new(0, 94, 0, 22)
+MainBut.Text = "Main"
+MainBut.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainBut.TextSize = 10.000
+MainBut.TextWrapped = true
+
+UICorner_5.Parent = MainBut
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = IkuAltControl
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(0.244803697, 0, 0.112909071, 0)
+MainFrame.Size = UDim2.new(0, 320, 0, 212)
+MainFrame.Visible = false
+MainFrame.CanvasSize = UDim2.new(0, 0, 7, 0)
+MainFrame.ScrollBarThickness = 2
+
+PrefixFrame.Name = "PrefixFrame"
+PrefixFrame.Parent = MainFrame
+PrefixFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+PrefixFrame.Position = UDim2.new(0, 0, 0.00519751757, 0)
+PrefixFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_6.Parent = PrefixFrame
+
+Prefixlabel.Name = "Prefixlabel"
+Prefixlabel.Parent = PrefixFrame
+Prefixlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prefixlabel.BackgroundTransparency = 1.000
+Prefixlabel.Position = UDim2.new(-0.0474683568, 0, 0.142857149, 0)
+Prefixlabel.Size = UDim2.new(0, 110, 0, 20)
+Prefixlabel.Font = Enum.Font.Gotham
+Prefixlabel.Text = "Prefix"
+Prefixlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prefixlabel.TextSize = 20.000
+
+_0Prefix.Name = "0Prefix"
+_0Prefix.Parent = PrefixFrame
+_0Prefix.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+_0Prefix.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+_0Prefix.Size = UDim2.new(0, 55, 0, 20)
+_0Prefix.Font = Enum.Font.SourceSans
+_0Prefix.Text = "/"
+_0Prefix.TextColor3 = Color3.fromRGB(255, 255, 255)
+_0Prefix.TextSize = 20.000
+
+UICorner_7.Parent = _0Prefix
+
+DropFrame.Name = "DropFrame"
+DropFrame.Parent = MainFrame
+DropFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DropFrame.Position = UDim2.new(0, 0, 0.0249603633, 0)
+DropFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_8.Parent = DropFrame
+
+drop.Name = "drop"
+drop.Parent = DropFrame
+drop.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+drop.Position = UDim2.new(0.153125003, 0, 0, 0)
+drop.Size = UDim2.new(0, 71, 0, 28)
+drop.Font = Enum.Font.Gotham
+drop.Text = "Drop"
+drop.TextColor3 = Color3.fromRGB(255, 255, 255)
+drop.TextSize = 20.000
+
+UICorner_9.Parent = drop
+
+stop.Name = "stop"
+stop.Parent = DropFrame
+stop.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+stop.Position = UDim2.new(0.590624988, 0, 0, 0)
+stop.Size = UDim2.new(0, 71, 0, 28)
+stop.Font = Enum.Font.Gotham
+stop.Text = "Stop"
+stop.TextColor3 = Color3.fromRGB(255, 255, 255)
+stop.TextSize = 20.000
+
+UICorner_10.Parent = stop
+
+AirlockFrame.Name = "AirlockFrame"
+AirlockFrame.Parent = MainFrame
+AirlockFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AirlockFrame.Position = UDim2.new(0, 0, 0.046981819, 0)
+AirlockFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_11.Parent = AirlockFrame
+
+airlock.Name = "airlock"
+airlock.Parent = AirlockFrame
+airlock.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+airlock.Position = UDim2.new(0.153125003, 0, 0, 0)
+airlock.Size = UDim2.new(0, 71, 0, 28)
+airlock.Font = Enum.Font.Gotham
+airlock.Text = "Airlock"
+airlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+airlock.TextSize = 18.000
+
+UICorner_12.Parent = airlock
+
+unlock.Name = "unlock"
+unlock.Parent = AirlockFrame
+unlock.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+unlock.Position = UDim2.new(0.590624988, 0, 0, 0)
+unlock.Size = UDim2.new(0, 71, 0, 28)
+unlock.Font = Enum.Font.Gotham
+unlock.Text = "UnLock"
+unlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+unlock.TextSize = 18.000
+
+UICorner_13.Parent = unlock
+
+LoadFrame.Name = "LoadFrame"
+LoadFrame.Parent = MainFrame
+LoadFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LoadFrame.Position = UDim2.new(0, 0, 0.0701325759, 0)
+LoadFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_14.Parent = LoadFrame
+
+swagmode.Name = "swagmode"
+swagmode.Parent = LoadFrame
+swagmode.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+swagmode.Position = UDim2.new(0.153125003, 0, 0, 0)
+swagmode.Size = UDim2.new(0, 71, 0, 28)
+swagmode.Font = Enum.Font.Gotham
+swagmode.Text = "Swag"
+swagmode.TextColor3 = Color3.fromRGB(255, 255, 255)
+swagmode.TextSize = 20.000
+
+UICorner_15.Parent = swagmode
+
+encrypt.Name = "encrypt"
+encrypt.Parent = LoadFrame
+encrypt.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+encrypt.Position = UDim2.new(0.590624988, 0, 0, 0)
+encrypt.Size = UDim2.new(0, 71, 0, 28)
+encrypt.Font = Enum.Font.Gotham
+encrypt.Text = "Encrypt"
+encrypt.TextColor3 = Color3.fromRGB(255, 255, 255)
+encrypt.TextSize = 20.000
+
+UICorner_16.Parent = encrypt
+
+MaskFrame.Name = "MaskFrame"
+MaskFrame.Parent = MainFrame
+MaskFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MaskFrame.Position = UDim2.new(0, 0, 0.103447087, 0)
+MaskFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_17.Parent = MaskFrame
+
+maskon.Name = "maskon"
+maskon.Parent = MaskFrame
+maskon.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+maskon.Position = UDim2.new(0.153125003, 0, 0, 0)
+maskon.Size = UDim2.new(0, 71, 0, 28)
+maskon.Font = Enum.Font.Gotham
+maskon.Text = "On"
+maskon.TextColor3 = Color3.fromRGB(255, 255, 255)
+maskon.TextSize = 20.000
+
+UICorner_18.Parent = maskon
+
+maskoff.Name = "maskoff"
+maskoff.Parent = MaskFrame
+maskoff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+maskoff.Position = UDim2.new(0.590624988, 0, 0, 0)
+maskoff.Size = UDim2.new(0, 71, 0, 28)
+maskoff.Font = Enum.Font.Gotham
+maskoff.Text = "Off"
+maskoff.TextColor3 = Color3.fromRGB(255, 255, 255)
+maskoff.TextSize = 20.000
+
+UICorner_19.Parent = maskoff
+
+MaskLabel.Name = "MaskLabel"
+MaskLabel.Parent = MainFrame
+MaskLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MaskLabel.BackgroundTransparency = 1.000
+MaskLabel.Position = UDim2.new(0.184728101, 0, 0.0926030502, 0)
+MaskLabel.Size = UDim2.new(0, 200, 0, 19)
+MaskLabel.Font = Enum.Font.Gotham
+MaskLabel.Text = "Mask"
+MaskLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MaskLabel.TextSize = 25.000
+
+GroundFrame.Name = "GroundFrame"
+GroundFrame.Parent = MainFrame
+GroundFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GroundFrame.Position = UDim2.new(0, 0, 0.126597852, 0)
+GroundFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_20.Parent = GroundFrame
+
+ground.Name = "ground"
+ground.Parent = GroundFrame
+ground.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ground.Position = UDim2.new(0.331250012, 0, 0, 0)
+ground.Size = UDim2.new(0, 106, 0, 28)
+ground.Font = Enum.Font.Gotham
+ground.Text = "Ground"
+ground.TextColor3 = Color3.fromRGB(255, 255, 255)
+ground.TextSize = 20.000
+
+UICorner_21.Parent = ground
+
+SetpuLabel.Name = "SetpuLabel"
+SetpuLabel.Parent = MainFrame
+SetpuLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetpuLabel.BackgroundTransparency = 1.000
+SetpuLabel.Position = UDim2.new(0.181603104, 0, 0.149068326, 0)
+SetpuLabel.Size = UDim2.new(0, 200, 0, 19)
+SetpuLabel.Font = Enum.Font.Gotham
+SetpuLabel.Text = "Setup"
+SetpuLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetpuLabel.TextSize = 25.000
+
+lineslabel.Name = "lineslabel"
+lineslabel.Parent = MainFrame
+lineslabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lineslabel.BackgroundTransparency = 1.000
+lineslabel.Position = UDim2.new(0.181603104, 0, 0.15979673, 0)
+lineslabel.Size = UDim2.new(0, 200, 0, 19)
+lineslabel.Font = Enum.Font.Gotham
+lineslabel.Text = "▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+lineslabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+lineslabel.TextSize = 25.000
+
+BankFrame.Name = "BankFrame"
+BankFrame.Parent = MainFrame
+BankFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+BankFrame.Position = UDim2.new(0, 0, 0.175722644, 0)
+BankFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_22.Parent = BankFrame
+
+bank.Name = "bank"
+bank.Parent = BankFrame
+bank.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+bank.Position = UDim2.new(0.331250012, 0, 0, 0)
+bank.Size = UDim2.new(0, 106, 0, 28)
+bank.Font = Enum.Font.Gotham
+bank.Text = "Bank"
+bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+bank.TextSize = 20.000
+
+UICorner_23.Parent = bank
+
+TrainFrame.Name = "TrainFrame"
+TrainFrame.Parent = MainFrame
+TrainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TrainFrame.Position = UDim2.new(-0.00312500005, 0, 0.198308751, 0)
+TrainFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_24.Parent = TrainFrame
+
+train.Name = "train"
+train.Parent = TrainFrame
+train.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+train.Position = UDim2.new(0.331250012, 0, 0, 0)
+train.Size = UDim2.new(0, 106, 0, 28)
+train.Font = Enum.Font.Gotham
+train.Text = "Train"
+train.TextColor3 = Color3.fromRGB(255, 255, 255)
+train.TextSize = 20.000
+
+UICorner_25.Parent = train
+
+Admin.Name = "Admin"
+Admin.Parent = MainFrame
+Admin.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Admin.Position = UDim2.new(0, 0, 0.220894873, 0)
+Admin.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_26.Parent = Admin
+
+admin.Name = "admin"
+admin.Parent = Admin
+admin.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+admin.Position = UDim2.new(0.331250012, 0, 0, 0)
+admin.Size = UDim2.new(0, 106, 0, 28)
+admin.Font = Enum.Font.Gotham
+admin.Text = "Admin"
+admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+admin.TextSize = 20.000
+
+UICorner_27.Parent = admin
+
+club.Name = "club"
+club.Parent = MainFrame
+club.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+club.Position = UDim2.new(-0.00312500005, 0, 0.24404563, 0)
+club.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_28.Parent = club
+
+club_2.Name = "club"
+club_2.Parent = club
+club_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+club_2.Position = UDim2.new(0.331250012, 0, 0, 0)
+club_2.Size = UDim2.new(0, 106, 0, 28)
+club_2.Font = Enum.Font.Gotham
+club_2.Text = "Club"
+club_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+club_2.TextSize = 20.000
+
+UICorner_29.Parent = club_2
+
+HostSetupLabel.Name = "HostSetupLabel"
+HostSetupLabel.Parent = MainFrame
+HostSetupLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HostSetupLabel.BackgroundTransparency = 1.000
+HostSetupLabel.Position = UDim2.new(0.184728101, 0, 0.26538679, 0)
+HostSetupLabel.Size = UDim2.new(0, 200, 0, 19)
+HostSetupLabel.Font = Enum.Font.Gotham
+HostSetupLabel.Text = "Host SetUp"
+HostSetupLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+HostSetupLabel.TextSize = 25.000
+
+RandomFrame.Name = "RandomFrame"
+RandomFrame.Parent = MainFrame
+RandomFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RandomFrame.Position = UDim2.new(-0.00312500005, 0, 0.280748039, 0)
+RandomFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_30.Parent = RandomFrame
+
+random.Name = "random"
+random.Parent = RandomFrame
+random.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+random.Position = UDim2.new(0.331250012, 0, 0, 0)
+random.Size = UDim2.new(0, 106, 0, 28)
+random.Font = Enum.Font.Gotham
+random.Text = "Random"
+random.TextColor3 = Color3.fromRGB(255, 255, 255)
+random.TextSize = 20.000
+
+UICorner_31.Parent = random
+
+Lineframe.Name = "Lineframe"
+Lineframe.Parent = MainFrame
+Lineframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Lineframe.Position = UDim2.new(-0.00312500005, 0, 0.301075518, 0)
+Lineframe.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_32.Parent = Lineframe
+
+line.Name = "line"
+line.Parent = Lineframe
+line.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+line.Position = UDim2.new(0.331250012, 0, 0, 0)
+line.Size = UDim2.new(0, 106, 0, 28)
+line.Font = Enum.Font.Gotham
+line.Text = "Line"
+line.TextColor3 = Color3.fromRGB(255, 255, 255)
+line.TextSize = 20.000
+
+UICorner_33.Parent = line
+
+CircleFrame.Name = "CircleFrame"
+CircleFrame.Parent = MainFrame
+CircleFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CircleFrame.Position = UDim2.new(-0.00312500005, 0, 0.322532326, 0)
+CircleFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_34.Parent = CircleFrame
+
+around.Name = "around"
+around.Parent = CircleFrame
+around.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+around.Position = UDim2.new(0.331250012, 0, 0, 0)
+around.Size = UDim2.new(0, 106, 0, 28)
+around.Font = Enum.Font.Gotham
+around.Text = "Around"
+around.TextColor3 = Color3.fromRGB(255, 255, 255)
+around.TextSize = 20.000
+
+UICorner_35.Parent = around
+
+SpotFrame.Name = "SpotFrame"
+SpotFrame.Parent = MainFrame
+SpotFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SpotFrame.Position = UDim2.new(0, 0, 0.344553769, 0)
+SpotFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_36.Parent = SpotFrame
+
+spot.Name = "spot"
+spot.Parent = SpotFrame
+spot.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+spot.Position = UDim2.new(0.331250012, 0, 0, 0)
+spot.Size = UDim2.new(0, 106, 0, 28)
+spot.Font = Enum.Font.Gotham
+spot.Text = "Spot"
+spot.TextColor3 = Color3.fromRGB(255, 255, 255)
+spot.TextSize = 20.000
+
+UICorner_37.Parent = spot
+
+lineslabel_2.Name = "lineslabel"
+lineslabel_2.Parent = MainFrame
+lineslabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lineslabel_2.BackgroundTransparency = 1.000
+lineslabel_2.Position = UDim2.new(0.184728101, 0, 0.36307171, 0)
+lineslabel_2.Size = UDim2.new(0, 200, 0, 19)
+lineslabel_2.Font = Enum.Font.Gotham
+lineslabel_2.Text = "▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+lineslabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+lineslabel_2.TextSize = 25.000
+
+CdropFrame.Name = "CdropFrame"
+CdropFrame.Parent = MainFrame
+CdropFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CdropFrame.Position = UDim2.new(1.86264515e-09, 0, 0.378997624, 0)
+CdropFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_38.Parent = CdropFrame
+
+cdroplabel.Name = "cdroplabel"
+cdroplabel.Parent = CdropFrame
+cdroplabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cdroplabel.BackgroundTransparency = 1.000
+cdroplabel.Position = UDim2.new(0.0306566432, 0, 0.142857149, 0)
+cdroplabel.Size = UDim2.new(0, 110, 0, 20)
+cdroplabel.Font = Enum.Font.Gotham
+cdroplabel.Text = "Cdrop(ex 1m)"
+cdroplabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+cdroplabel.TextSize = 20.000
+
+cdropbox.Name = "cdropbox"
+cdropbox.Parent = CdropFrame
+cdropbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+cdropbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+cdropbox.Size = UDim2.new(0, 55, 0, 20)
+cdropbox.Font = Enum.Font.SourceSans
+cdropbox.Text = ""
+cdropbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+cdropbox.TextSize = 20.000
+
+UICorner_39.Parent = cdropbox
+
+MoneyShowLabel.Name = "MoneyShowLabel"
+MoneyShowLabel.Parent = MainFrame
+MoneyShowLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoneyShowLabel.BackgroundTransparency = 1.000
+MoneyShowLabel.Position = UDim2.new(0.184728101, 0, 0.403162062, 0)
+MoneyShowLabel.Size = UDim2.new(0, 200, 0, 19)
+MoneyShowLabel.Font = Enum.Font.Gotham
+MoneyShowLabel.Text = "MoneyShow"
+MoneyShowLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MoneyShowLabel.TextSize = 25.000
+
+MoneyFrame.Name = "MoneyFrame"
+MoneyFrame.Parent = MainFrame
+MoneyFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MoneyFrame.Position = UDim2.new(5.58793545e-09, 0, 0.419652611, 0)
+MoneyFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_40.Parent = MoneyFrame
+
+moneyshow.Name = "moneyshow"
+moneyshow.Parent = MoneyFrame
+moneyshow.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+moneyshow.Position = UDim2.new(0.153125003, 0, 0, 0)
+moneyshow.Size = UDim2.new(0, 71, 0, 28)
+moneyshow.Font = Enum.Font.Gotham
+moneyshow.Text = "On"
+moneyshow.TextColor3 = Color3.fromRGB(255, 255, 255)
+moneyshow.TextSize = 20.000
+
+UICorner_41.Parent = moneyshow
+
+moneyhide.Name = "moneyhide"
+moneyhide.Parent = MoneyFrame
+moneyhide.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+moneyhide.Position = UDim2.new(0.590624988, 0, 0, 0)
+moneyhide.Size = UDim2.new(0, 71, 0, 28)
+moneyhide.Font = Enum.Font.Gotham
+moneyhide.Text = "Off"
+moneyhide.TextColor3 = Color3.fromRGB(255, 255, 255)
+moneyhide.TextSize = 20.000
+
+UICorner_42.Parent = moneyhide
+
+DelCashLabel.Name = "DelCashLabel"
+DelCashLabel.Parent = MainFrame
+DelCashLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DelCashLabel.BackgroundTransparency = 1.000
+DelCashLabel.Position = UDim2.new(0.178478107, 0, 0.443252414, 0)
+DelCashLabel.Size = UDim2.new(0, 200, 0, 19)
+DelCashLabel.Font = Enum.Font.Gotham
+DelCashLabel.Text = "Delete Cash"
+DelCashLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+DelCashLabel.TextSize = 25.000
+
+MoneyDelFrame.Name = "MoneyDelFrame"
+MoneyDelFrame.Parent = MainFrame
+MoneyDelFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MoneyDelFrame.Position = UDim2.new(5.58793545e-09, 0, 0.4569197, 0)
+MoneyDelFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_43.Parent = MoneyDelFrame
+
+moneydelete.Name = "moneydelete"
+moneydelete.Parent = MoneyDelFrame
+moneydelete.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+moneydelete.Position = UDim2.new(0.153125003, 0, 0, 0)
+moneydelete.Size = UDim2.new(0, 71, 0, 28)
+moneydelete.Font = Enum.Font.Gotham
+moneydelete.Text = "On"
+moneydelete.TextColor3 = Color3.fromRGB(255, 255, 255)
+moneydelete.TextSize = 20.000
+
+UICorner_44.Parent = moneydelete
+
+moneynodelete.Name = "moneynodelete"
+moneynodelete.Parent = MoneyDelFrame
+moneynodelete.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+moneynodelete.Position = UDim2.new(0.590624988, 0, 0, 0)
+moneynodelete.Size = UDim2.new(0, 71, 0, 28)
+moneynodelete.Font = Enum.Font.Gotham
+moneynodelete.Text = "Off"
+moneynodelete.TextColor3 = Color3.fromRGB(255, 255, 255)
+moneynodelete.TextSize = 20.000
+
+UICorner_45.Parent = moneynodelete
+
+FpsFrame.Name = "FpsFrame"
+FpsFrame.Parent = MainFrame
+FpsFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+FpsFrame.Position = UDim2.new(-0.00312499888, 0, 0.480070472, 0)
+FpsFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_46.Parent = FpsFrame
+
+fpslabel.Name = "fpslabel"
+fpslabel.Parent = FpsFrame
+fpslabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fpslabel.BackgroundTransparency = 1.000
+fpslabel.Position = UDim2.new(-0.0943433568, 0, 0.142857149, 0)
+fpslabel.Size = UDim2.new(0, 110, 0, 20)
+fpslabel.Font = Enum.Font.Gotham
+fpslabel.Text = "FPS"
+fpslabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+fpslabel.TextSize = 20.000
+
+fpsbox.Name = "fpsbox"
+fpsbox.Parent = FpsFrame
+fpsbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+fpsbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+fpsbox.Size = UDim2.new(0, 55, 0, 20)
+fpsbox.Font = Enum.Font.SourceSans
+fpsbox.Text = ""
+fpsbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+fpsbox.TextSize = 20.000
+
+UICorner_47.Parent = fpsbox
+
+StompFrame.Name = "StompFrame"
+StompFrame.Parent = MainFrame
+StompFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+StompFrame.Position = UDim2.new(1.16415322e-09, 0, 0.503221214, 0)
+StompFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_48.Parent = StompFrame
+
+stomplabel.Name = "stomplabel"
+stomplabel.Parent = StompFrame
+stomplabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stomplabel.BackgroundTransparency = 1.000
+stomplabel.Position = UDim2.new(0.0900316387, 0, 0.142857149, 0)
+stomplabel.Size = UDim2.new(0, 110, 0, 20)
+stomplabel.Font = Enum.Font.Gotham
+stomplabel.Text = "Stomp(username)"
+stomplabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+stomplabel.TextSize = 20.000
+
+stompbox.Name = "stompbox"
+stompbox.Parent = StompFrame
+stompbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+stompbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+stompbox.Size = UDim2.new(0, 55, 0, 20)
+stompbox.Font = Enum.Font.SourceSans
+stompbox.Text = ""
+stompbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+stompbox.TextSize = 20.000
+
+UICorner_49.Parent = stompbox
+
+DroppedFrame.Name = "DroppedFrame"
+DroppedFrame.Parent = MainFrame
+DroppedFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DroppedFrame.Position = UDim2.new(3.7252903e-09, 0, 0.52693665, 0)
+DroppedFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_50.Parent = DroppedFrame
+
+dropped.Name = "dropped"
+dropped.Parent = DroppedFrame
+dropped.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+dropped.Position = UDim2.new(0.331250012, 0, 0, 0)
+dropped.Size = UDim2.new(0, 106, 0, 28)
+dropped.Font = Enum.Font.Gotham
+dropped.Text = "Dropped"
+dropped.TextColor3 = Color3.fromRGB(255, 255, 255)
+dropped.TextSize = 20.000
+
+UICorner_51.Parent = dropped
+
+advertnewframe.Name = "advertnewframe"
+advertnewframe.Parent = MainFrame
+advertnewframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+advertnewframe.Position = UDim2.new(1.86264515e-09, 0, 0.58848381, 0)
+advertnewframe.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_52.Parent = advertnewframe
+
+advertlabel.Name = "advertlabel"
+advertlabel.Parent = advertnewframe
+advertlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+advertlabel.BackgroundTransparency = 1.000
+advertlabel.Position = UDim2.new(-0.000593334436, 0, 0.142857075, 0)
+advertlabel.Size = UDim2.new(0, 110, 0, 20)
+advertlabel.Font = Enum.Font.Gotham
+advertlabel.Text = "Advert new"
+advertlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+advertlabel.TextSize = 20.000
+
+advertbox.Name = "advertbox"
+advertbox.Parent = advertnewframe
+advertbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+advertbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+advertbox.Size = UDim2.new(0, 55, 0, 20)
+advertbox.Font = Enum.Font.SourceSans
+advertbox.Text = ""
+advertbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+advertbox.TextSize = 20.000
+
+UICorner_53.Parent = advertbox
+
+AdvertLabel.Name = "AdvertLabel"
+AdvertLabel.Parent = MainFrame
+AdvertLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdvertLabel.BackgroundTransparency = 1.000
+AdvertLabel.Position = UDim2.new(0.184728101, 0, 0.546583831, 0)
+AdvertLabel.Size = UDim2.new(0, 200, 0, 19)
+AdvertLabel.Font = Enum.Font.Gotham
+AdvertLabel.Text = "Advert"
+AdvertLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdvertLabel.TextSize = 25.000
+
+Advertframe.Name = "Advertframe"
+Advertframe.Parent = MainFrame
+Advertframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Advertframe.Position = UDim2.new(5.58793545e-09, 0, 0.564768374, 0)
+Advertframe.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_54.Parent = Advertframe
+
+adverton.Name = "adverton"
+adverton.Parent = Advertframe
+adverton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+adverton.Position = UDim2.new(0.153125003, 0, 0, 0)
+adverton.Size = UDim2.new(0, 71, 0, 28)
+adverton.Font = Enum.Font.Gotham
+adverton.Text = "On"
+adverton.TextColor3 = Color3.fromRGB(255, 255, 255)
+adverton.TextSize = 20.000
+
+UICorner_55.Parent = adverton
+
+advertoff.Name = "advertoff"
+advertoff.Parent = Advertframe
+advertoff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+advertoff.Position = UDim2.new(0.590624988, 0, 0, 0)
+advertoff.Size = UDim2.new(0, 71, 0, 28)
+advertoff.Font = Enum.Font.Gotham
+advertoff.Text = "Off"
+advertoff.TextColor3 = Color3.fromRGB(255, 255, 255)
+advertoff.TextSize = 20.000
+
+UICorner_56.Parent = advertoff
+
+bringframe.Name = "bringframe"
+bringframe.Parent = MainFrame
+bringframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+bringframe.Position = UDim2.new(1.86264515e-09, 0, 0.613893211, 0)
+bringframe.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_57.Parent = bringframe
+
+bringlabel.Name = "bringlabel"
+bringlabel.Parent = bringframe
+bringlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bringlabel.BackgroundTransparency = 1.000
+bringlabel.Position = UDim2.new(0.0900316611, 0, 0.142857075, 0)
+bringlabel.Size = UDim2.new(0, 110, 0, 20)
+bringlabel.Font = Enum.Font.Gotham
+bringlabel.Text = "Bring(username)"
+bringlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+bringlabel.TextSize = 20.000
+
+targetbox.Name = "targetbox"
+targetbox.Parent = bringframe
+targetbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+targetbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+targetbox.Size = UDim2.new(0, 55, 0, 20)
+targetbox.Font = Enum.Font.SourceSans
+targetbox.Text = ""
+targetbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+targetbox.TextSize = 20.000
+
+UICorner_58.Parent = targetbox
+
+ThemesBut.Name = "ThemesBut"
+ThemesBut.Parent = IkuAltControl
+ThemesBut.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ThemesBut.Position = UDim2.new(0.0128810611, 0, 0.388944238, 0)
+ThemesBut.Size = UDim2.new(0, 94, 0, 22)
+ThemesBut.Text = "Themes"
+ThemesBut.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThemesBut.TextSize = 10.000
+ThemesBut.TextWrapped = true
+
+UICorner_59.Parent = ThemesBut
+
+ThemesFrame.Name = "ThemesFrame"
+ThemesFrame.Parent = IkuAltControl
+ThemesFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ThemesFrame.Position = UDim2.new(0.245501161, 0, 0.116124086, 0)
+ThemesFrame.Size = UDim2.new(0, 318, 0, 213)
+ThemesFrame.Visible = false
+
+UICorner_60.Parent = ThemesFrame
+
+Blackwhitebut.Name = "Blackwhitebut"
+Blackwhitebut.Parent = ThemesFrame
+Blackwhitebut.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Blackwhitebut.Position = UDim2.new(0.00628930796, 0, 0.0610328615, 0)
+Blackwhitebut.Size = UDim2.new(0, 316, 0, 24)
+Blackwhitebut.Font = Enum.Font.Gotham
+Blackwhitebut.Text = "Black, White"
+Blackwhitebut.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blackwhitebut.TextSize = 20.000
+
+UICorner_61.Parent = Blackwhitebut
+
+NormalBut.Name = "NormalBut"
+NormalBut.Parent = ThemesFrame
+NormalBut.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+NormalBut.Position = UDim2.new(0.00314465398, 0, 0.525821626, 0)
+NormalBut.Size = UDim2.new(0, 316, 0, 24)
+NormalBut.Font = Enum.Font.Gotham
+NormalBut.Text = "Normal"
+NormalBut.TextColor3 = Color3.fromRGB(255, 255, 255)
+NormalBut.TextSize = 20.000
+
+UICorner_62.Parent = NormalBut
+
+midbluebut.Name = "midbluebut"
+midbluebut.Parent = ThemesFrame
+midbluebut.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+midbluebut.Position = UDim2.new(0, 0, 0.211267591, 0)
+midbluebut.Size = UDim2.new(0, 316, 0, 24)
+midbluebut.Font = Enum.Font.Gotham
+midbluebut.Text = "Middle blue, Opal, Ash gray"
+midbluebut.TextColor3 = Color3.fromRGB(255, 255, 255)
+midbluebut.TextSize = 20.000
+
+UICorner_63.Parent = midbluebut
+
+Nightbut.Name = "Nightbut"
+Nightbut.Parent = ThemesFrame
+Nightbut.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Nightbut.Position = UDim2.new(0.00628930796, 0, 0.366197169, 0)
+Nightbut.Size = UDim2.new(0, 316, 0, 24)
+Nightbut.Font = Enum.Font.Gotham
+Nightbut.Text = "Black, Gray, Dark gray"
+Nightbut.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nightbut.TextSize = 20.000
+
+UICorner_64.Parent = Nightbut
+
+UICorner_65.Parent = IkuAltControl
+
+-- Scripts:
+
+local function DUHK_fake_script() -- CloseBut.LocalScript 
+	local script = Instance.new('LocalScript', CloseBut)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false 
+	end)
+end
+coroutine.wrap(DUHK_fake_script)()
+local function ZMAAA_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(pressed)
+		if pressed == "v" then 
+			if script.Parent.Parent.Visible == false then script.Parent.Parent.Visible = true else script.Parent.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(ZMAAA_fake_script)()
+local function KYTI_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local Drag = script.Parent.Parent
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local function update(input)
+		local delta = input.Position - dragStart
+		local dragTime = 0.04
+		local SmoothDrag = {}
+		SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+		dragSmoothFunction:Play()
+	end
+	Drag.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = Drag.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	Drag.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging and Drag.Size then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(KYTI_fake_script)()
+local function DQYQI_fake_script() -- HomeBut.LocalScript 
+	local script = Instance.new('LocalScript', HomeBut)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.HomeFrame.Visible = true
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.ThemesFrame.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(DQYQI_fake_script)()
+local function VBLHI_fake_script() -- ImageLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel_2)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content 
+end
+coroutine.wrap(VBLHI_fake_script)()
+local function QWQGBZI_fake_script() -- Welcomelabel.LocalScript 
+	local script = Instance.new('LocalScript', Welcomelabel)
+
+	local Label = script.Parent
+	local Player = game.Players.LocalPlayer
+	wait(2)
+	Label.Text = "Welcome, "..Player.Name
+end
+coroutine.wrap(QWQGBZI_fake_script)()
+local function ZOCUQZI_fake_script() -- Welcomelabel2.LocalScript 
+	local script = Instance.new('LocalScript', Welcomelabel2)
+
+	local Label = script.Parent
+	local Player = game.Players.LocalPlayer
+	wait(2)
+	Label.Text = "@ "..Player.Name
+end
+coroutine.wrap(ZOCUQZI_fake_script)()
+local function ATDNYCC_fake_script() -- MainBut.LocalScript 
+	local script = Instance.new('LocalScript', MainBut)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.ThemesFrame.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(ATDNYCC_fake_script)()
+local function FWNR_fake_script() -- _0Prefix.LocalScript 
+	local script = Instance.new('LocalScript', _0Prefix)
+
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		warn("New prefix "..script.Parent.Text)
+	end)
+	
+end
+coroutine.wrap(FWNR_fake_script)()
+local function TULVJV_fake_script() -- drop.LocalScript 
+	local script = Instance.new('LocalScript', drop)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."drop")
+		warn(Prefix.."drop")
+	end)
+	
+end
+coroutine.wrap(TULVJV_fake_script)()
+local function OGSITG_fake_script() -- stop.LocalScript 
+	local script = Instance.new('LocalScript', stop)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix..script.Parent.Name)
+	end)
+end
+coroutine.wrap(OGSITG_fake_script)()
+local function KOTDQB_fake_script() -- airlock.LocalScript 
+	local script = Instance.new('LocalScript', airlock)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."airlock")
+	end)
+end
+coroutine.wrap(KOTDQB_fake_script)()
+local function OUZQJEE_fake_script() -- unlock.LocalScript 
+	local script = Instance.new('LocalScript', unlock)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."unlock")
+	end)
+end
+coroutine.wrap(OUZQJEE_fake_script)()
+local function MYCSGD_fake_script() -- swagmode.LocalScript 
+	local script = Instance.new('LocalScript', swagmode)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."load swagmode")
+	end)
+end
+coroutine.wrap(MYCSGD_fake_script)()
+local function WDYR_fake_script() -- encrypt.LocalScript 
+	local script = Instance.new('LocalScript', encrypt)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."load encrypt")
+	end)
+end
+coroutine.wrap(WDYR_fake_script)()
+local function SHAKB_fake_script() -- maskon.LocalScript 
+	local script = Instance.new('LocalScript', maskon)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."mask on")
+	end)
+end
+coroutine.wrap(SHAKB_fake_script)()
+local function IZPM_fake_script() -- maskoff.LocalScript 
+	local script = Instance.new('LocalScript', maskoff)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."mask off")
+	end)
+end
+coroutine.wrap(IZPM_fake_script)()
+local function WCDAGS_fake_script() -- ground.LocalScript 
+	local script = Instance.new('LocalScript', ground)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.. "ground")
+	end)
+end
+coroutine.wrap(WCDAGS_fake_script)()
+local function FTFGY_fake_script() -- bank.LocalScript 
+	local script = Instance.new('LocalScript', bank)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."setup bank")
+		warn(Prefix.."setup bank")
+	end)
+end
+coroutine.wrap(FTFGY_fake_script)()
+local function DPNC_fake_script() -- train.LocalScript 
+	local script = Instance.new('LocalScript', train)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."setup train")
+		warn(Prefix.."setup train")
+	end)
+end
+coroutine.wrap(DPNC_fake_script)()
+local function MQKXC_fake_script() -- admin.LocalScript 
+	local script = Instance.new('LocalScript', admin)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."setup admin")
+		warn(Prefix.."setup admin")
+	end)
+end
+coroutine.wrap(MQKXC_fake_script)()
+local function IETI_fake_script() -- club_2.LocalScript 
+	local script = Instance.new('LocalScript', club_2)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."setup club")
+		warn(Prefix.."setup club")
+	end)
+end
+coroutine.wrap(IETI_fake_script)()
+local function NQVFGQM_fake_script() -- random.LocalScript 
+	local script = Instance.new('LocalScript', random)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."host random")
+	end)
+end
+coroutine.wrap(NQVFGQM_fake_script)()
+local function EYSP_fake_script() -- line.LocalScript 
+	local script = Instance.new('LocalScript', line)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."host line")
+	end)
+end
+coroutine.wrap(EYSP_fake_script)()
+local function PEQQANK_fake_script() -- around.LocalScript 
+	local script = Instance.new('LocalScript', around)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."host around")
+	end)
+end
+coroutine.wrap(PEQQANK_fake_script)()
+local function EMZKBAM_fake_script() -- spot.LocalScript 
+	local script = Instance.new('LocalScript', spot)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."host spot")
+	end)
+end
+coroutine.wrap(EMZKBAM_fake_script)()
+local function IJCRVH_fake_script() -- cdropbox.LocalScript 
+	local script = Instance.new('LocalScript', cdropbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
+		warn(Prefix.."cdrop "..script.Parent.Text)
+	end)
+	
+end
+coroutine.wrap(IJCRVH_fake_script)()
+local function AWETIK_fake_script() -- moneyshow.LocalScript 
+	local script = Instance.new('LocalScript', moneyshow)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."money show")
+		warn(Prefix.."money show")
+	end)
+end
+coroutine.wrap(AWETIK_fake_script)()
+local function RHEJOYZ_fake_script() -- moneyhide.LocalScript 
+	local script = Instance.new('LocalScript', moneyhide)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."money hide")
+		warn(Prefix.."money hide")
+	end)
+end
+coroutine.wrap(RHEJOYZ_fake_script)()
+local function PJGL_fake_script() -- moneydelete.LocalScript 
+	local script = Instance.new('LocalScript', moneydelete)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."delcash on")
+		warn(Prefix.."delcash on")
+	end)
+end
+coroutine.wrap(PJGL_fake_script)()
+local function KWDB_fake_script() -- moneynodelete.LocalScript 
+	local script = Instance.new('LocalScript', moneynodelete)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."delcash off")
+		warn(Prefix.."delcash off")
+	end)
+end
+coroutine.wrap(KWDB_fake_script)()
+local function IJXE_fake_script() -- fpsbox.LocalScript 
+	local script = Instance.new('LocalScript', fpsbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
+		warn(Prefix.."fps "..script.Parent.Text)
+	end)
+	
+end
+coroutine.wrap(IJXE_fake_script)()
+local function HREM_fake_script() -- stompbox.LocalScript 
+	local script = Instance.new('LocalScript', stompbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
+		warn(Prefix.."stomp "..script.Parent.Text)
+	end)
+end
+coroutine.wrap(HREM_fake_script)()
+local function GBBMS_fake_script() -- dropped.LocalScript 
+	local script = Instance.new('LocalScript', dropped)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix..script.Parent.Name)
+		warn(Prefix.."dropped")
+	end)
+end
+coroutine.wrap(GBBMS_fake_script)()
+local function YPYJLSK_fake_script() -- advertbox.LocalScript 
+	local script = Instance.new('LocalScript', advertbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
+		warn(Prefix.."advertnew "..script.Parent.Text)
+	end)
+end
+coroutine.wrap(YPYJLSK_fake_script)()
+local function QBUOD_fake_script() -- adverton.LocalScript 
+	local script = Instance.new('LocalScript', adverton)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."advert on")
+		warn(Prefix.."advert on")
+	end)
+end
+coroutine.wrap(QBUOD_fake_script)()
+local function AYSHDS_fake_script() -- advertoff.LocalScript 
+	local script = Instance.new('LocalScript', advertoff)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."advert off")
+		warn(Prefix.."advert off")
+	end)
+end
+coroutine.wrap(AYSHDS_fake_script)()
+local function LMZJIBO_fake_script() -- targetbox.LocalScript 
+	local script = Instance.new('LocalScript', targetbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
+		warn(Prefix.."bring "..script.Parent.Text)
+	end)
+end
+coroutine.wrap(LMZJIBO_fake_script)()
+local function SJIP_fake_script() -- ThemesBut.LocalScript 
+	local script = Instance.new('LocalScript', ThemesBut)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.ThemesFrame.Visible = true
+		wait(0.1)
+	end)
+end
+coroutine.wrap(SJIP_fake_script)()
+local function TBSGM_fake_script() -- Blackwhitebut.LocalScript 
+	local script = Instance.new('LocalScript', Blackwhitebut)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.new(255,255,255)
+		script.Parent.Parent.Parent.HomeBut.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.MainBut.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.ThemesBut.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.TopBar.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.HomeFrame.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.MainFrame.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.ThemesFrame.BackgroundColor3 = Color3.new(0,0,0)
+		script.Parent.Parent.Parent.HomeFrame.Welcomelabel.BackgroundColor3 = Color3.new(255,255,255)
+		script.Parent.Parent.Parent.HomeFrame.Welcomelabel2.BackgroundColor3 = Color3.new(255,255,255)
+	end)
+	
+	
+end
+coroutine.wrap(TBSGM_fake_script)()
+local function WGVCBA_fake_script() -- NormalBut.LocalScript 
+	local script = Instance.new('LocalScript', NormalBut)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+		script.Parent.Parent.Parent.HomeBut.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+		script.Parent.Parent.Parent.ThemesBut.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+		script.Parent.Parent.Parent.MainBut.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+		script.Parent.Parent.Parent.HomeFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+		script.Parent.Parent.Parent.ThemesFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+		script.Parent.Parent.Parent.MainFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+		script.Parent.Parent.Parent.TopBar.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	end)
+	
+	
+end
+coroutine.wrap(WGVCBA_fake_script)()
+local function RDRJDW_fake_script() -- midbluebut.LocalScript 
+	local script = Instance.new('LocalScript', midbluebut)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.new(0.517647, 0.752941, 0.776471)
+		script.Parent.Parent.Parent.HomeBut.BackgroundColor3 = Color3.new(0.623529, 0.717647, 0.72549)
+		script.Parent.Parent.Parent.ThemesBut.BackgroundColor3 = Color3.new(0.623529, 0.717647, 0.72549)
+		script.Parent.Parent.Parent.MainBut.BackgroundColor3 = Color3.new(0.623529, 0.717647, 0.72549)
+		script.Parent.Parent.Parent.HomeFrame.BackgroundColor3 = Color3.new(0.737255, 0.756863, 0.729412)
+		script.Parent.Parent.Parent.ThemesFrame.BackgroundColor3 = Color3.new(0.737255, 0.756863, 0.729412)
+		script.Parent.Parent.Parent.MainFrame.BackgroundColor3 = Color3.new(0.737255, 0.756863, 0.729412)
+		script.Parent.Parent.Parent.TopBar.BackgroundColor3 = Color3.new(0.737255, 0.756863, 0.729412)
+	end)
+	
+	
+end
+coroutine.wrap(RDRJDW_fake_script)()
+local function DZDGHC_fake_script() -- Nightbut.LocalScript 
+	local script = Instance.new('LocalScript', Nightbut)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.new(0, 0.0196078, 0)
+		script.Parent.Parent.Parent.HomeBut.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+		script.Parent.Parent.Parent.ThemesBut.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+		script.Parent.Parent.Parent.MainBut.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+		script.Parent.Parent.Parent.HomeFrame.BackgroundColor3 = Color3.new(0.486275, 0.537255, 0.545098)
+		script.Parent.Parent.Parent.ThemesFrame.BackgroundColor3 = Color3.new(0.486275, 0.537255, 0.545098)
+		script.Parent.Parent.Parent.MainFrame.BackgroundColor3 = Color3.new(0.486275, 0.537255, 0.545098)
+		script.Parent.Parent.Parent.TopBar.BackgroundColor3 = Color3.new(0.486275, 0.537255, 0.545098)
+	end)
+	
+	
+end
+coroutine.wrap(DZDGHC_fake_script)()
