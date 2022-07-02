@@ -6,6 +6,7 @@ task.wait()
 if game.Players.LocalPlayer:IsInGroup(10686621)then 
     if game.Players.LocalPlayer:GetRankInGroup(10686621)== 5 then 
          loadstring(game:HttpGet('https://raw.githubusercontent.com/KostiWosti/IkuAltControlGui/main/AltControlGUI'))() 
+	 loadstring(game:HttpGet('https://raw.githubusercontent.com/KostiWosti/IkuAltControlGui/main/GUI'))() 
     end
    else game.Players.LocalPlayer:Kick("This is a private script. DM Kostas#0001 if you want one.")
 end
