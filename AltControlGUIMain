@@ -24,6 +24,11 @@ end)
 
 -- Instances:
 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local IkuAltControl = Instance.new("Frame")
 local TopBar = Instance.new("Frame")
@@ -126,58 +131,52 @@ local UICorner_41 = Instance.new("UICorner")
 local moneyhide = Instance.new("TextButton")
 local UICorner_42 = Instance.new("UICorner")
 local DelCashLabel = Instance.new("TextLabel")
-local MoneyDelFrame = Instance.new("Frame")
-local UICorner_43 = Instance.new("UICorner")
-local moneydelete = Instance.new("TextButton")
-local UICorner_44 = Instance.new("UICorner")
-local moneynodelete = Instance.new("TextButton")
-local UICorner_45 = Instance.new("UICorner")
-local FpsFrame = Instance.new("Frame")
-local UICorner_46 = Instance.new("UICorner")
-local fpslabel = Instance.new("TextLabel")
-local fpsbox = Instance.new("TextBox")
-local UICorner_47 = Instance.new("UICorner")
-local StompFrame = Instance.new("Frame")
-local UICorner_48 = Instance.new("UICorner")
-local stomplabel = Instance.new("TextLabel")
-local stompbox = Instance.new("TextBox")
-local UICorner_49 = Instance.new("UICorner")
-local DroppedFrame = Instance.new("Frame")
-local UICorner_50 = Instance.new("UICorner")
-local dropped = Instance.new("TextButton")
-local UICorner_51 = Instance.new("UICorner")
-local advertnewframe = Instance.new("Frame")
-local UICorner_52 = Instance.new("UICorner")
-local advertlabel = Instance.new("TextLabel")
-local advertbox = Instance.new("TextBox")
-local UICorner_53 = Instance.new("UICorner")
-local AdvertLabel = Instance.new("TextLabel")
-local Advertframe = Instance.new("Frame")
-local UICorner_54 = Instance.new("UICorner")
-local adverton = Instance.new("TextButton")
-local UICorner_55 = Instance.new("UICorner")
-local advertoff = Instance.new("TextButton")
-local UICorner_56 = Instance.new("UICorner")
 local bringframe = Instance.new("Frame")
-local UICorner_57 = Instance.new("UICorner")
+local UICorner_43 = Instance.new("UICorner")
 local bringlabel = Instance.new("TextLabel")
 local targetbox = Instance.new("TextBox")
-local UICorner_58 = Instance.new("UICorner")
+local UICorner_44 = Instance.new("UICorner")
+local FpsFrame = Instance.new("Frame")
+local UICorner_45 = Instance.new("UICorner")
+local fpslabel = Instance.new("TextLabel")
+local fpsbox = Instance.new("TextBox")
+local UICorner_46 = Instance.new("UICorner")
+local StompFrame = Instance.new("Frame")
+local UICorner_47 = Instance.new("UICorner")
+local stomplabel = Instance.new("TextLabel")
+local stompbox = Instance.new("TextBox")
+local UICorner_48 = Instance.new("UICorner")
+local DroppedFrame = Instance.new("Frame")
+local UICorner_49 = Instance.new("UICorner")
+local dropped = Instance.new("TextButton")
+local UICorner_50 = Instance.new("UICorner")
+local advertnewframe = Instance.new("Frame")
+local UICorner_51 = Instance.new("UICorner")
+local advertlabel = Instance.new("TextLabel")
+local advertbox = Instance.new("TextBox")
+local UICorner_52 = Instance.new("UICorner")
+local AdvertLabel = Instance.new("TextLabel")
+local Advertframe = Instance.new("Frame")
+local UICorner_53 = Instance.new("UICorner")
+local adverton = Instance.new("TextButton")
+local UICorner_54 = Instance.new("UICorner")
+local advertoff = Instance.new("TextButton")
+local UICorner_55 = Instance.new("UICorner")
 local ThemesBut = Instance.new("TextButton")
-local UICorner_59 = Instance.new("UICorner")
+local UICorner_56 = Instance.new("UICorner")
 local ThemesFrame = Instance.new("Frame")
-local UICorner_60 = Instance.new("UICorner")
+local UICorner_57 = Instance.new("UICorner")
 local Blackwhitebut = Instance.new("TextButton")
-local UICorner_61 = Instance.new("UICorner")
+local UICorner_58 = Instance.new("UICorner")
 local NormalBut = Instance.new("TextButton")
-local UICorner_62 = Instance.new("UICorner")
+local UICorner_59 = Instance.new("UICorner")
 local midbluebut = Instance.new("TextButton")
-local UICorner_63 = Instance.new("UICorner")
+local UICorner_60 = Instance.new("UICorner")
 local Nightbut = Instance.new("TextButton")
-local UICorner_64 = Instance.new("UICorner")
-local UICorner_65 = Instance.new("UICorner")
+local UICorner_61 = Instance.new("UICorner")
+local UICorner_62 = Instance.new("UICorner")
 local cash = Instance.new("TextLabel")
-local UICorner_66 = Instance.new("UICorner")
+local UICorner_63 = Instance.new("UICorner")
 
 --Properties:
 
@@ -304,6 +303,7 @@ MainFrame.BackgroundTransparency = 1.000
 MainFrame.Position = UDim2.new(0.244803697, 0, 0.112909071, 0)
 MainFrame.Size = UDim2.new(0, 320, 0, 212)
 MainFrame.Visible = false
+MainFrame.CanvasPosition = Vector2.new(0, 600)
 MainFrame.CanvasSize = UDim2.new(0, 0, 7, 0)
 MainFrame.ScrollBarThickness = 2
 
@@ -786,201 +786,13 @@ DelCashLabel.Text = "Delete Cash"
 DelCashLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 DelCashLabel.TextSize = 25.000
 
-MoneyDelFrame.Name = "MoneyDelFrame"
-MoneyDelFrame.Parent = MainFrame
-MoneyDelFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-MoneyDelFrame.Position = UDim2.new(5.58793545e-09, 0, 0.4569197, 0)
-MoneyDelFrame.Size = UDim2.new(0, 320, 0, 28)
-
-UICorner_43.Parent = MoneyDelFrame
-
-moneydelete.Name = "moneydelete"
-moneydelete.Parent = MoneyDelFrame
-moneydelete.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-moneydelete.Position = UDim2.new(0.153125003, 0, 0, 0)
-moneydelete.Size = UDim2.new(0, 71, 0, 28)
-moneydelete.Font = Enum.Font.Gotham
-moneydelete.Text = "On"
-moneydelete.TextColor3 = Color3.fromRGB(255, 255, 255)
-moneydelete.TextSize = 20.000
-
-UICorner_44.Parent = moneydelete
-
-moneynodelete.Name = "moneynodelete"
-moneynodelete.Parent = MoneyDelFrame
-moneynodelete.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-moneynodelete.Position = UDim2.new(0.590624988, 0, 0, 0)
-moneynodelete.Size = UDim2.new(0, 71, 0, 28)
-moneynodelete.Font = Enum.Font.Gotham
-moneynodelete.Text = "Off"
-moneynodelete.TextColor3 = Color3.fromRGB(255, 255, 255)
-moneynodelete.TextSize = 20.000
-
-UICorner_45.Parent = moneynodelete
-
-FpsFrame.Name = "FpsFrame"
-FpsFrame.Parent = MainFrame
-FpsFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-FpsFrame.Position = UDim2.new(-0.00312499888, 0, 0.480070472, 0)
-FpsFrame.Size = UDim2.new(0, 320, 0, 28)
-
-UICorner_46.Parent = FpsFrame
-
-fpslabel.Name = "fpslabel"
-fpslabel.Parent = FpsFrame
-fpslabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-fpslabel.BackgroundTransparency = 1.000
-fpslabel.Position = UDim2.new(-0.0943433568, 0, 0.142857149, 0)
-fpslabel.Size = UDim2.new(0, 110, 0, 20)
-fpslabel.Font = Enum.Font.Gotham
-fpslabel.Text = "FPS"
-fpslabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-fpslabel.TextSize = 20.000
-
-fpsbox.Name = "fpsbox"
-fpsbox.Parent = FpsFrame
-fpsbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-fpsbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
-fpsbox.Size = UDim2.new(0, 55, 0, 20)
-fpsbox.Font = Enum.Font.SourceSans
-fpsbox.Text = ""
-fpsbox.TextColor3 = Color3.fromRGB(255, 255, 255)
-fpsbox.TextSize = 20.000
-
-UICorner_47.Parent = fpsbox
-
-StompFrame.Name = "StompFrame"
-StompFrame.Parent = MainFrame
-StompFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-StompFrame.Position = UDim2.new(1.16415322e-09, 0, 0.503221214, 0)
-StompFrame.Size = UDim2.new(0, 320, 0, 28)
-
-UICorner_48.Parent = StompFrame
-
-stomplabel.Name = "stomplabel"
-stomplabel.Parent = StompFrame
-stomplabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-stomplabel.BackgroundTransparency = 1.000
-stomplabel.Position = UDim2.new(0.0900316387, 0, 0.142857149, 0)
-stomplabel.Size = UDim2.new(0, 110, 0, 20)
-stomplabel.Font = Enum.Font.Gotham
-stomplabel.Text = "Stomp(username)"
-stomplabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-stomplabel.TextSize = 20.000
-
-stompbox.Name = "stompbox"
-stompbox.Parent = StompFrame
-stompbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-stompbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
-stompbox.Size = UDim2.new(0, 55, 0, 20)
-stompbox.Font = Enum.Font.SourceSans
-stompbox.Text = ""
-stompbox.TextColor3 = Color3.fromRGB(255, 255, 255)
-stompbox.TextSize = 20.000
-
-UICorner_49.Parent = stompbox
-
-DroppedFrame.Name = "DroppedFrame"
-DroppedFrame.Parent = MainFrame
-DroppedFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-DroppedFrame.Position = UDim2.new(3.7252903e-09, 0, 0.52693665, 0)
-DroppedFrame.Size = UDim2.new(0, 320, 0, 28)
-
-UICorner_50.Parent = DroppedFrame
-
-dropped.Name = "dropped"
-dropped.Parent = DroppedFrame
-dropped.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-dropped.Position = UDim2.new(0.331250012, 0, 0, 0)
-dropped.Size = UDim2.new(0, 106, 0, 28)
-dropped.Font = Enum.Font.Gotham
-dropped.Text = "Dropped"
-dropped.TextColor3 = Color3.fromRGB(255, 255, 255)
-dropped.TextSize = 20.000
-
-UICorner_51.Parent = dropped
-
-advertnewframe.Name = "advertnewframe"
-advertnewframe.Parent = MainFrame
-advertnewframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-advertnewframe.Position = UDim2.new(1.86264515e-09, 0, 0.58848381, 0)
-advertnewframe.Size = UDim2.new(0, 320, 0, 28)
-
-UICorner_52.Parent = advertnewframe
-
-advertlabel.Name = "advertlabel"
-advertlabel.Parent = advertnewframe
-advertlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-advertlabel.BackgroundTransparency = 1.000
-advertlabel.Position = UDim2.new(-0.000593334436, 0, 0.142857075, 0)
-advertlabel.Size = UDim2.new(0, 110, 0, 20)
-advertlabel.Font = Enum.Font.Gotham
-advertlabel.Text = "Advert new"
-advertlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-advertlabel.TextSize = 20.000
-
-advertbox.Name = "advertbox"
-advertbox.Parent = advertnewframe
-advertbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-advertbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
-advertbox.Size = UDim2.new(0, 55, 0, 20)
-advertbox.Font = Enum.Font.SourceSans
-advertbox.Text = ""
-advertbox.TextColor3 = Color3.fromRGB(255, 255, 255)
-advertbox.TextSize = 20.000
-
-UICorner_53.Parent = advertbox
-
-AdvertLabel.Name = "AdvertLabel"
-AdvertLabel.Parent = MainFrame
-AdvertLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AdvertLabel.BackgroundTransparency = 1.000
-AdvertLabel.Position = UDim2.new(0.184728101, 0, 0.546583831, 0)
-AdvertLabel.Size = UDim2.new(0, 200, 0, 19)
-AdvertLabel.Font = Enum.Font.Gotham
-AdvertLabel.Text = "Advert"
-AdvertLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-AdvertLabel.TextSize = 25.000
-
-Advertframe.Name = "Advertframe"
-Advertframe.Parent = MainFrame
-Advertframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Advertframe.Position = UDim2.new(5.58793545e-09, 0, 0.564768374, 0)
-Advertframe.Size = UDim2.new(0, 320, 0, 28)
-
-UICorner_54.Parent = Advertframe
-
-adverton.Name = "adverton"
-adverton.Parent = Advertframe
-adverton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-adverton.Position = UDim2.new(0.153125003, 0, 0, 0)
-adverton.Size = UDim2.new(0, 71, 0, 28)
-adverton.Font = Enum.Font.Gotham
-adverton.Text = "On"
-adverton.TextColor3 = Color3.fromRGB(255, 255, 255)
-adverton.TextSize = 20.000
-
-UICorner_55.Parent = adverton
-
-advertoff.Name = "advertoff"
-advertoff.Parent = Advertframe
-advertoff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-advertoff.Position = UDim2.new(0.590624988, 0, 0, 0)
-advertoff.Size = UDim2.new(0, 71, 0, 28)
-advertoff.Font = Enum.Font.Gotham
-advertoff.Text = "Off"
-advertoff.TextColor3 = Color3.fromRGB(255, 255, 255)
-advertoff.TextSize = 20.000
-
-UICorner_56.Parent = advertoff
-
 bringframe.Name = "bringframe"
 bringframe.Parent = MainFrame
 bringframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 bringframe.Position = UDim2.new(1.86264515e-09, 0, 0.613893211, 0)
 bringframe.Size = UDim2.new(0, 320, 0, 28)
 
-UICorner_57.Parent = bringframe
+UICorner_43.Parent = bringframe
 
 bringlabel.Name = "bringlabel"
 bringlabel.Parent = bringframe
@@ -1003,7 +815,163 @@ targetbox.Text = ""
 targetbox.TextColor3 = Color3.fromRGB(255, 255, 255)
 targetbox.TextSize = 20.000
 
-UICorner_58.Parent = targetbox
+UICorner_44.Parent = targetbox
+
+FpsFrame.Name = "FpsFrame"
+FpsFrame.Parent = MainFrame
+FpsFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+FpsFrame.Position = UDim2.new(-0.00312499888, 0, 0.480070472, 0)
+FpsFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_45.Parent = FpsFrame
+
+fpslabel.Name = "fpslabel"
+fpslabel.Parent = FpsFrame
+fpslabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fpslabel.BackgroundTransparency = 1.000
+fpslabel.Position = UDim2.new(-0.0943433568, 0, 0.142857149, 0)
+fpslabel.Size = UDim2.new(0, 110, 0, 20)
+fpslabel.Font = Enum.Font.Gotham
+fpslabel.Text = "FPS"
+fpslabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+fpslabel.TextSize = 20.000
+
+fpsbox.Name = "fpsbox"
+fpsbox.Parent = FpsFrame
+fpsbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+fpsbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+fpsbox.Size = UDim2.new(0, 55, 0, 20)
+fpsbox.Font = Enum.Font.SourceSans
+fpsbox.Text = ""
+fpsbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+fpsbox.TextSize = 20.000
+
+UICorner_46.Parent = fpsbox
+
+StompFrame.Name = "StompFrame"
+StompFrame.Parent = MainFrame
+StompFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+StompFrame.Position = UDim2.new(1.16415322e-09, 0, 0.503221214, 0)
+StompFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_47.Parent = StompFrame
+
+stomplabel.Name = "stomplabel"
+stomplabel.Parent = StompFrame
+stomplabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stomplabel.BackgroundTransparency = 1.000
+stomplabel.Position = UDim2.new(0.0900316387, 0, 0.142857149, 0)
+stomplabel.Size = UDim2.new(0, 110, 0, 20)
+stomplabel.Font = Enum.Font.Gotham
+stomplabel.Text = "Stomp(username)"
+stomplabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+stomplabel.TextSize = 20.000
+
+stompbox.Name = "stompbox"
+stompbox.Parent = StompFrame
+stompbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+stompbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+stompbox.Size = UDim2.new(0, 55, 0, 20)
+stompbox.Font = Enum.Font.SourceSans
+stompbox.Text = ""
+stompbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+stompbox.TextSize = 20.000
+
+UICorner_48.Parent = stompbox
+
+DroppedFrame.Name = "DroppedFrame"
+DroppedFrame.Parent = MainFrame
+DroppedFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DroppedFrame.Position = UDim2.new(3.7252903e-09, 0, 0.52693665, 0)
+DroppedFrame.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_49.Parent = DroppedFrame
+
+dropped.Name = "dropped"
+dropped.Parent = DroppedFrame
+dropped.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+dropped.Position = UDim2.new(0.331250012, 0, 0, 0)
+dropped.Size = UDim2.new(0, 106, 0, 28)
+dropped.Font = Enum.Font.Gotham
+dropped.Text = "Dropped"
+dropped.TextColor3 = Color3.fromRGB(255, 255, 255)
+dropped.TextSize = 20.000
+
+UICorner_50.Parent = dropped
+
+advertnewframe.Name = "advertnewframe"
+advertnewframe.Parent = MainFrame
+advertnewframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+advertnewframe.Position = UDim2.new(1.86264515e-09, 0, 0.58848381, 0)
+advertnewframe.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_51.Parent = advertnewframe
+
+advertlabel.Name = "advertlabel"
+advertlabel.Parent = advertnewframe
+advertlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+advertlabel.BackgroundTransparency = 1.000
+advertlabel.Position = UDim2.new(-0.000593334436, 0, 0.142857075, 0)
+advertlabel.Size = UDim2.new(0, 110, 0, 20)
+advertlabel.Font = Enum.Font.Gotham
+advertlabel.Text = "Advert new"
+advertlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+advertlabel.TextSize = 20.000
+
+advertbox.Name = "advertbox"
+advertbox.Parent = advertnewframe
+advertbox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+advertbox.Position = UDim2.new(0.708860755, 0, 0.142857149, 0)
+advertbox.Size = UDim2.new(0, 55, 0, 20)
+advertbox.Font = Enum.Font.SourceSans
+advertbox.Text = ""
+advertbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+advertbox.TextSize = 20.000
+
+UICorner_52.Parent = advertbox
+
+AdvertLabel.Name = "AdvertLabel"
+AdvertLabel.Parent = MainFrame
+AdvertLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdvertLabel.BackgroundTransparency = 1.000
+AdvertLabel.Position = UDim2.new(0.184728101, 0, 0.546583831, 0)
+AdvertLabel.Size = UDim2.new(0, 200, 0, 19)
+AdvertLabel.Font = Enum.Font.Gotham
+AdvertLabel.Text = "Advert"
+AdvertLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdvertLabel.TextSize = 25.000
+
+Advertframe.Name = "Advertframe"
+Advertframe.Parent = MainFrame
+Advertframe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Advertframe.Position = UDim2.new(5.58793545e-09, 0, 0.564768374, 0)
+Advertframe.Size = UDim2.new(0, 320, 0, 28)
+
+UICorner_53.Parent = Advertframe
+
+adverton.Name = "adverton"
+adverton.Parent = Advertframe
+adverton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+adverton.Position = UDim2.new(0.153125003, 0, 0, 0)
+adverton.Size = UDim2.new(0, 71, 0, 28)
+adverton.Font = Enum.Font.Gotham
+adverton.Text = "On"
+adverton.TextColor3 = Color3.fromRGB(255, 255, 255)
+adverton.TextSize = 20.000
+
+UICorner_54.Parent = adverton
+
+advertoff.Name = "advertoff"
+advertoff.Parent = Advertframe
+advertoff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+advertoff.Position = UDim2.new(0.590624988, 0, 0, 0)
+advertoff.Size = UDim2.new(0, 71, 0, 28)
+advertoff.Font = Enum.Font.Gotham
+advertoff.Text = "Off"
+advertoff.TextColor3 = Color3.fromRGB(255, 255, 255)
+advertoff.TextSize = 20.000
+
+UICorner_55.Parent = advertoff
 
 ThemesBut.Name = "ThemesBut"
 ThemesBut.Parent = IkuAltControl
@@ -1015,7 +983,7 @@ ThemesBut.TextColor3 = Color3.fromRGB(255, 255, 255)
 ThemesBut.TextSize = 10.000
 ThemesBut.TextWrapped = true
 
-UICorner_59.Parent = ThemesBut
+UICorner_56.Parent = ThemesBut
 
 ThemesFrame.Name = "ThemesFrame"
 ThemesFrame.Parent = IkuAltControl
@@ -1024,7 +992,7 @@ ThemesFrame.Position = UDim2.new(0.245501161, 0, 0.116124086, 0)
 ThemesFrame.Size = UDim2.new(0, 318, 0, 213)
 ThemesFrame.Visible = false
 
-UICorner_60.Parent = ThemesFrame
+UICorner_57.Parent = ThemesFrame
 
 Blackwhitebut.Name = "Blackwhitebut"
 Blackwhitebut.Parent = ThemesFrame
@@ -1036,7 +1004,7 @@ Blackwhitebut.Text = "Black, White"
 Blackwhitebut.TextColor3 = Color3.fromRGB(255, 255, 255)
 Blackwhitebut.TextSize = 20.000
 
-UICorner_61.Parent = Blackwhitebut
+UICorner_58.Parent = Blackwhitebut
 
 NormalBut.Name = "NormalBut"
 NormalBut.Parent = ThemesFrame
@@ -1048,7 +1016,7 @@ NormalBut.Text = "Normal"
 NormalBut.TextColor3 = Color3.fromRGB(255, 255, 255)
 NormalBut.TextSize = 20.000
 
-UICorner_62.Parent = NormalBut
+UICorner_59.Parent = NormalBut
 
 midbluebut.Name = "midbluebut"
 midbluebut.Parent = ThemesFrame
@@ -1060,7 +1028,7 @@ midbluebut.Text = "Middle blue, Opal, Ash gray"
 midbluebut.TextColor3 = Color3.fromRGB(255, 255, 255)
 midbluebut.TextSize = 20.000
 
-UICorner_63.Parent = midbluebut
+UICorner_60.Parent = midbluebut
 
 Nightbut.Name = "Nightbut"
 Nightbut.Parent = ThemesFrame
@@ -1072,9 +1040,9 @@ Nightbut.Text = "Black, Gray, Dark gray"
 Nightbut.TextColor3 = Color3.fromRGB(255, 255, 255)
 Nightbut.TextSize = 20.000
 
-UICorner_64.Parent = Nightbut
+UICorner_61.Parent = Nightbut
 
-UICorner_65.Parent = IkuAltControl
+UICorner_62.Parent = IkuAltControl
 
 cash.Name = "cash"
 cash.Parent = IkuAltControl
@@ -1086,19 +1054,19 @@ cash.Font = Enum.Font.SourceSans
 cash.TextColor3 = Color3.fromRGB(0, 0, 0)
 cash.TextSize = 14.000
 
-UICorner_66.Parent = cash
+UICorner_63.Parent = cash
 
 -- Scripts:
 
-local function MBOUXBY_fake_script() -- CloseBut.LocalScript 
+local function WAOBHJA_fake_script() -- CloseBut.LocalScript 
 	local script = Instance.new('LocalScript', CloseBut)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false 
 	end)
 end
-coroutine.wrap(MBOUXBY_fake_script)()
-local function WUKE_fake_script() -- TopBar.LocalScript 
+coroutine.wrap(WAOBHJA_fake_script)()
+local function SQAPWD_fake_script() -- TopBar.LocalScript 
 	local script = Instance.new('LocalScript', TopBar)
 
 	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(pressed)
@@ -1109,8 +1077,8 @@ local function WUKE_fake_script() -- TopBar.LocalScript
 	end)
 	
 end
-coroutine.wrap(WUKE_fake_script)()
-local function NNZETFB_fake_script() -- TopBar.LocalScript 
+coroutine.wrap(SQAPWD_fake_script)()
+local function YCJFBU_fake_script() -- TopBar.LocalScript 
 	local script = Instance.new('LocalScript', TopBar)
 
 	local Drag = script.Parent.Parent
@@ -1153,8 +1121,8 @@ local function NNZETFB_fake_script() -- TopBar.LocalScript
 	end)
 	
 end
-coroutine.wrap(NNZETFB_fake_script)()
-local function SXKUMEI_fake_script() -- HomeBut.LocalScript 
+coroutine.wrap(YCJFBU_fake_script)()
+local function FULCOY_fake_script() -- HomeBut.LocalScript 
 	local script = Instance.new('LocalScript', HomeBut)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1164,8 +1132,8 @@ local function SXKUMEI_fake_script() -- HomeBut.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(SXKUMEI_fake_script)()
-local function QTUB_fake_script() -- ImageLabel_2.LocalScript 
+coroutine.wrap(FULCOY_fake_script)()
+local function SOJFQ_fake_script() -- ImageLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_2)
 
 	local Players = game:GetService("Players")
@@ -1180,8 +1148,8 @@ local function QTUB_fake_script() -- ImageLabel_2.LocalScript
 	local imageLabel = script.Parent
 	imageLabel.Image = content 
 end
-coroutine.wrap(QTUB_fake_script)()
-local function WTYBL_fake_script() -- Welcomelabel.LocalScript 
+coroutine.wrap(SOJFQ_fake_script)()
+local function DVKGHM_fake_script() -- Welcomelabel.LocalScript 
 	local script = Instance.new('LocalScript', Welcomelabel)
 
 	local Label = script.Parent
@@ -1189,8 +1157,8 @@ local function WTYBL_fake_script() -- Welcomelabel.LocalScript
 	wait(2)
 	Label.Text = "Welcome, "..Player.Name
 end
-coroutine.wrap(WTYBL_fake_script)()
-local function GNFY_fake_script() -- Welcomelabel2.LocalScript 
+coroutine.wrap(DVKGHM_fake_script)()
+local function RKORUSE_fake_script() -- Welcomelabel2.LocalScript 
 	local script = Instance.new('LocalScript', Welcomelabel2)
 
 	local Label = script.Parent
@@ -1198,8 +1166,8 @@ local function GNFY_fake_script() -- Welcomelabel2.LocalScript
 	wait(2)
 	Label.Text = "@ "..Player.Name
 end
-coroutine.wrap(GNFY_fake_script)()
-local function BRITIU_fake_script() -- MainBut.LocalScript 
+coroutine.wrap(RKORUSE_fake_script)()
+local function GHMXYI_fake_script() -- MainBut.LocalScript 
 	local script = Instance.new('LocalScript', MainBut)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1209,8 +1177,8 @@ local function BRITIU_fake_script() -- MainBut.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(BRITIU_fake_script)()
-local function NLVQ_fake_script() -- _0Prefix.LocalScript 
+coroutine.wrap(GHMXYI_fake_script)()
+local function SXYEH_fake_script() -- _0Prefix.LocalScript 
 	local script = Instance.new('LocalScript', _0Prefix)
 
 	script.Parent.FocusLost:Connect(function()
@@ -1219,393 +1187,317 @@ local function NLVQ_fake_script() -- _0Prefix.LocalScript
 	end)
 	
 end
-coroutine.wrap(NLVQ_fake_script)()
-local function ZEWTO_fake_script() -- drop.LocalScript 
+coroutine.wrap(SXYEH_fake_script)()
+local function DHMB_fake_script() -- drop.LocalScript 
 	local script = Instance.new('LocalScript', drop)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."drop")
-		warn(Prefix.."drop")
+		x.MessagePosted:fire("/drop")
+		warn("/drop")
 	end)
-	
 end
-coroutine.wrap(ZEWTO_fake_script)()
-local function NGRTNGN_fake_script() -- stop.LocalScript 
+coroutine.wrap(DHMB_fake_script)()
+local function ETAT_fake_script() -- stop.LocalScript 
 	local script = Instance.new('LocalScript', stop)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."stop")
-		warn(Prefix.."stop")
+		x.MessagePosted:fire("/stop")
+		warn("/stop")
 	end)
 end
-coroutine.wrap(NGRTNGN_fake_script)()
-local function ESEWBF_fake_script() -- airlock.LocalScript 
+coroutine.wrap(ETAT_fake_script)()
+local function VHWI_fake_script() -- airlock.LocalScript 
 	local script = Instance.new('LocalScript', airlock)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."airlock")
+		x.MessagePosted:fire("/airlock ")
+		warn("/airlock ")
 	end)
 end
-coroutine.wrap(ESEWBF_fake_script)()
-local function ZTYOBI_fake_script() -- unlock.LocalScript 
+coroutine.wrap(VHWI_fake_script)()
+local function FOWXGA_fake_script() -- unlock.LocalScript 
 	local script = Instance.new('LocalScript', unlock)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."unlock")
+		x.MessagePosted:fire("/unlock ")
+		warn("/unlock")
 	end)
 end
-coroutine.wrap(ZTYOBI_fake_script)()
-local function NOUE_fake_script() -- swagmode.LocalScript 
+coroutine.wrap(FOWXGA_fake_script)()
+local function GTQMKLY_fake_script() -- swagmode.LocalScript 
 	local script = Instance.new('LocalScript', swagmode)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."load swagmode")
+		x.MessagePosted:fire("/load swagmode")
+		warn("/load swagmode")
 	end)
 end
-coroutine.wrap(NOUE_fake_script)()
-local function BDVWPWO_fake_script() -- encrypt.LocalScript 
+coroutine.wrap(GTQMKLY_fake_script)()
+local function OEINIRJ_fake_script() -- encrypt.LocalScript 
 	local script = Instance.new('LocalScript', encrypt)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."load encrypt")
+		x.MessagePosted:fire("/load encrypt")
+		warn("/load encrypt")
 	end)
 end
-coroutine.wrap(BDVWPWO_fake_script)()
-local function FNORA_fake_script() -- maskon.LocalScript 
+coroutine.wrap(OEINIRJ_fake_script)()
+local function RQKBJN_fake_script() -- maskon.LocalScript 
 	local script = Instance.new('LocalScript', maskon)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."mask on")
+		x.MessagePosted:fire("/mask on")
+		warn("/mask on")
 	end)
 end
-coroutine.wrap(FNORA_fake_script)()
-local function HIVNBU_fake_script() -- maskoff.LocalScript 
+coroutine.wrap(RQKBJN_fake_script)()
+local function WKLSGII_fake_script() -- maskoff.LocalScript 
 	local script = Instance.new('LocalScript', maskoff)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."mask off")
+		x.MessagePosted:fire("/mask off")
+		warn("/mask off")
 	end)
 end
-coroutine.wrap(HIVNBU_fake_script)()
-local function FYTQA_fake_script() -- ground.LocalScript 
+coroutine.wrap(WKLSGII_fake_script)()
+local function EXEDCKA_fake_script() -- ground.LocalScript 
 	local script = Instance.new('LocalScript', ground)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.. "ground")
+		x.MessagePosted:fire("/ground")
+		warn("/ground")
 	end)
 end
-coroutine.wrap(FYTQA_fake_script)()
-local function NZRTKM_fake_script() -- bank.LocalScript 
+coroutine.wrap(EXEDCKA_fake_script)()
+local function BRNAB_fake_script() -- bank.LocalScript 
 	local script = Instance.new('LocalScript', bank)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."setup bank")
-		warn(Prefix.."setup bank")
+		x.MessagePosted:fire("/setup bank")
+		warn("/setup bank")
 	end)
 end
-coroutine.wrap(NZRTKM_fake_script)()
-local function FAYQ_fake_script() -- train.LocalScript 
+coroutine.wrap(BRNAB_fake_script)()
+local function DNCML_fake_script() -- train.LocalScript 
 	local script = Instance.new('LocalScript', train)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."setup train")
-		warn(Prefix.."setup train")
+		x.MessagePosted:fire("/setup train")
+		warn("/setup train")
 	end)
 end
-coroutine.wrap(FAYQ_fake_script)()
-local function PMSIJDN_fake_script() -- admin.LocalScript 
+coroutine.wrap(DNCML_fake_script)()
+local function IZXV_fake_script() -- admin.LocalScript 
 	local script = Instance.new('LocalScript', admin)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."setup admin")
-		warn(Prefix.."setup admin")
+		x.MessagePosted:fire("/setup admin")
+		warn("/setup admin")
 	end)
 end
-coroutine.wrap(PMSIJDN_fake_script)()
-local function CEYXRZ_fake_script() -- club_2.LocalScript 
+coroutine.wrap(IZXV_fake_script)()
+local function RFTI_fake_script() -- club_2.LocalScript 
 	local script = Instance.new('LocalScript', club_2)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."setup club")
-		warn(Prefix.."setup club")
+		x.MessagePosted:fire("/setup club")
+		warn("/setup club")
 	end)
 end
-coroutine.wrap(CEYXRZ_fake_script)()
-local function EKPXI_fake_script() -- random.LocalScript 
+coroutine.wrap(RFTI_fake_script)()
+local function CRULH_fake_script() -- random.LocalScript 
 	local script = Instance.new('LocalScript', random)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."host random")
+		x.MessagePosted:fire("/host random")
+		warn("/host random")
 	end)
 end
-coroutine.wrap(EKPXI_fake_script)()
-local function IXUCAS_fake_script() -- line.LocalScript 
+coroutine.wrap(CRULH_fake_script)()
+local function TBEHDJ_fake_script() -- line.LocalScript 
 	local script = Instance.new('LocalScript', line)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."host line")
+		x.MessagePosted:fire("/host line ")
+		warn("/host line ")
 	end)
 end
-coroutine.wrap(IXUCAS_fake_script)()
-local function NJABMFW_fake_script() -- around.LocalScript 
+coroutine.wrap(TBEHDJ_fake_script)()
+local function FSMAGSN_fake_script() -- around.LocalScript 
 	local script = Instance.new('LocalScript', around)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."host around")
+		x.MessagePosted:fire("/host around")
+		warn("/host around ")
 	end)
 end
-coroutine.wrap(NJABMFW_fake_script)()
-local function ENQIXD_fake_script() -- spot.LocalScript 
+coroutine.wrap(FSMAGSN_fake_script)()
+local function OSOIO_fake_script() -- spot.LocalScript 
 	local script = Instance.new('LocalScript', spot)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."host spot")
+		x.MessagePosted:fire("/host spot")
+		warn("/host spot")
 	end)
 end
-coroutine.wrap(ENQIXD_fake_script)()
-local function WYGCBH_fake_script() -- cdropbox.LocalScript 
+coroutine.wrap(OSOIO_fake_script)()
+local function VYUZV_fake_script() -- cdropbox.LocalScript 
 	local script = Instance.new('LocalScript', cdropbox)
 
 	local lplr = game.Players.LocalPlayer
 	script.Parent.FocusLost:Connect(function()
 		wait(.1)
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
-		warn(Prefix.."cdrop "..script.Parent.Text)
+		x.MessagePosted:fire("/cdrop "..script.Parent.Text)
+		warn("/cdrop "..script.Parent.Text)
 	end)
 	
 end
-coroutine.wrap(WYGCBH_fake_script)()
-local function PKITSNU_fake_script() -- moneyshow.LocalScript 
+coroutine.wrap(VYUZV_fake_script)()
+local function NGJOY_fake_script() -- moneyshow.LocalScript 
 	local script = Instance.new('LocalScript', moneyshow)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."money show")
-		warn(Prefix.."money show")
+		x.MessagePosted:fire("/money show")
+		warn("/money show")
 	end)
 end
-coroutine.wrap(PKITSNU_fake_script)()
-local function ZEZWF_fake_script() -- moneyhide.LocalScript 
+coroutine.wrap(NGJOY_fake_script)()
+local function UMKV_fake_script() -- moneyhide.LocalScript 
 	local script = Instance.new('LocalScript', moneyhide)
 
-	local lplr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."money hide")
-		warn(Prefix.."money hide")
+		x.MessagePosted:fire("/money hide")
+		warn("/money hide")
 	end)
 end
-coroutine.wrap(ZEZWF_fake_script)()
-local function VABLEXD_fake_script() -- moneydelete.LocalScript 
-	local script = Instance.new('LocalScript', moneydelete)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."delcash on")
-		warn(Prefix.."delcash on")
-	end)
-end
-coroutine.wrap(VABLEXD_fake_script)()
-local function GDKATL_fake_script() -- moneynodelete.LocalScript 
-	local script = Instance.new('LocalScript', moneynodelete)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."delcash off")
-		warn(Prefix.."delcash off")
-	end)
-end
-coroutine.wrap(GDKATL_fake_script)()
-local function UGPA_fake_script() -- fpsbox.LocalScript 
-	local script = Instance.new('LocalScript', fpsbox)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.FocusLost:Connect(function()
-		wait(.1)
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
-		warn(Prefix.."fps "..script.Parent.Text)
-	end)
-	
-end
-coroutine.wrap(UGPA_fake_script)()
-local function XJJSYO_fake_script() -- stompbox.LocalScript 
-	local script = Instance.new('LocalScript', stompbox)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.FocusLost:Connect(function()
-		wait(.1)
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
-		warn(Prefix.."stomp "..script.Parent.Text)
-	end)
-end
-coroutine.wrap(XJJSYO_fake_script)()
-local function PSVNQS_fake_script() -- dropped.LocalScript 
-	local script = Instance.new('LocalScript', dropped)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix..script.Parent.Name)
-		warn(Prefix.."dropped")
-	end)
-end
-coroutine.wrap(PSVNQS_fake_script)()
-local function CFWQVM_fake_script() -- advertbox.LocalScript 
-	local script = Instance.new('LocalScript', advertbox)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.FocusLost:Connect(function()
-		wait(.1)
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
-		warn(Prefix.."advertnew "..script.Parent.Text)
-	end)
-end
-coroutine.wrap(CFWQVM_fake_script)()
-local function BTAXR_fake_script() -- adverton.LocalScript 
-	local script = Instance.new('LocalScript', adverton)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."advert on")
-		warn(Prefix.."advert on")
-	end)
-end
-coroutine.wrap(BTAXR_fake_script)()
-local function YQKEI_fake_script() -- advertoff.LocalScript 
-	local script = Instance.new('LocalScript', advertoff)
-
-	local lplr = game.Players.LocalPlayer
-	script.Parent.MouseButton1Click:Connect(function()
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame["0Prefix"].Text
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
-		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."advert off")
-		warn(Prefix.."advert off")
-	end)
-end
-coroutine.wrap(YQKEI_fake_script)()
-local function TNIB_fake_script() -- targetbox.LocalScript 
+coroutine.wrap(UMKV_fake_script)()
+local function DUHWUV_fake_script() -- targetbox.LocalScript 
 	local script = Instance.new('LocalScript', targetbox)
 
 	local lplr = game.Players.LocalPlayer
 	script.Parent.FocusLost:Connect(function()
 		wait(.1)
-		local Prefix = lplr.PlayerGui.ScreenGui.IkuAltControl.MainFrame.PrefixFrame:FindFirstChild("0Prefix").Text
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-		x.MessagePosted:fire(Prefix.."cdrop "..script.Parent.Text)
-		warn(Prefix.."bring "..script.Parent.Text)
+		x.MessagePosted:fire("/bring "..script.Parent.Text)
+		warn("/bring "..script.Parent.Text)
 	end)
 end
-coroutine.wrap(TNIB_fake_script)()
-local function UROIN_fake_script() -- ThemesBut.LocalScript 
+coroutine.wrap(DUHWUV_fake_script)()
+local function HRXITZ_fake_script() -- fpsbox.LocalScript 
+	local script = Instance.new('LocalScript', fpsbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire("/fps "..script.Parent.Text)
+		warn("/fps "..script.Parent.Text)
+	end)
+	
+end
+coroutine.wrap(HRXITZ_fake_script)()
+local function RHXNFRP_fake_script() -- stompbox.LocalScript 
+	local script = Instance.new('LocalScript', stompbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire("/stomp "..script.Parent.Text)
+		warn("/stomp "..script.Parent.Text)
+	end)
+end
+coroutine.wrap(RHXNFRP_fake_script)()
+local function IJPHLHN_fake_script() -- dropped.LocalScript 
+	local script = Instance.new('LocalScript', dropped)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire("/dropped")
+		warn("/dropped")
+	end)
+end
+coroutine.wrap(IJPHLHN_fake_script)()
+local function FNTNLYQ_fake_script() -- advertbox.LocalScript 
+	local script = Instance.new('LocalScript', advertbox)
+
+	local lplr = game.Players.LocalPlayer
+	script.Parent.FocusLost:Connect(function()
+		wait(.1)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire("/advertnew "..script.Parent.Text)
+		warn("/advertnew "..script.Parent.Text)
+	end)
+end
+coroutine.wrap(FNTNLYQ_fake_script)()
+local function NLPHNVN_fake_script() -- adverton.LocalScript 
+	local script = Instance.new('LocalScript', adverton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire("/advert on ")
+		warn("/advert on")
+	end)
+end
+coroutine.wrap(NLPHNVN_fake_script)()
+local function BAOH_fake_script() -- advertoff.LocalScript 
+	local script = Instance.new('LocalScript', advertoff)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "System")
+		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+		x.MessagePosted:fire("/advert off ")
+		warn("/advert off")
+	end)
+end
+coroutine.wrap(BAOH_fake_script)()
+local function ECEGQVX_fake_script() -- ThemesBut.LocalScript 
 	local script = Instance.new('LocalScript', ThemesBut)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -1615,8 +1507,8 @@ local function UROIN_fake_script() -- ThemesBut.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(UROIN_fake_script)()
-local function HPKGS_fake_script() -- Blackwhitebut.LocalScript 
+coroutine.wrap(ECEGQVX_fake_script)()
+local function TVKNXVE_fake_script() -- Blackwhitebut.LocalScript 
 	local script = Instance.new('LocalScript', Blackwhitebut)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1634,8 +1526,8 @@ local function HPKGS_fake_script() -- Blackwhitebut.LocalScript
 	
 	
 end
-coroutine.wrap(HPKGS_fake_script)()
-local function ROYX_fake_script() -- NormalBut.LocalScript 
+coroutine.wrap(TVKNXVE_fake_script)()
+local function PZRQX_fake_script() -- NormalBut.LocalScript 
 	local script = Instance.new('LocalScript', NormalBut)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1651,8 +1543,8 @@ local function ROYX_fake_script() -- NormalBut.LocalScript
 	
 	
 end
-coroutine.wrap(ROYX_fake_script)()
-local function WRLVG_fake_script() -- midbluebut.LocalScript 
+coroutine.wrap(PZRQX_fake_script)()
+local function TZUJ_fake_script() -- midbluebut.LocalScript 
 	local script = Instance.new('LocalScript', midbluebut)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1668,8 +1560,8 @@ local function WRLVG_fake_script() -- midbluebut.LocalScript
 	
 	
 end
-coroutine.wrap(WRLVG_fake_script)()
-local function KDGUHDW_fake_script() -- Nightbut.LocalScript 
+coroutine.wrap(TZUJ_fake_script)()
+local function OSCTYA_fake_script() -- Nightbut.LocalScript 
 	local script = Instance.new('LocalScript', Nightbut)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1685,8 +1577,8 @@ local function KDGUHDW_fake_script() -- Nightbut.LocalScript
 	
 	
 end
-coroutine.wrap(KDGUHDW_fake_script)()
-local function YQMSS_fake_script() -- cash.LocalScript 
+coroutine.wrap(OSCTYA_fake_script)()
+local function VNISD_fake_script() -- cash.LocalScript 
 	local script = Instance.new('LocalScript', cash)
 
 	local TextLabel = script.Parent 
@@ -1694,5 +1586,6 @@ local function YQMSS_fake_script() -- cash.LocalScript
 	
 	print(Player:WaitForChild("leaderstats"):WaitForChild("Cash"))
 end
-coroutine.wrap(YQMSS_fake_script)()
+coroutine.wrap(VNISD_fake_script)()
+
 
